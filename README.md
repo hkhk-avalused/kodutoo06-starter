@@ -82,7 +82,7 @@ Iga seadme kohta on tootjal **juhend** (*user manual*) ja **andmeleht** (*datash
 **Mis seadme juhendit loed?**
 
 - **Olukord A:** sinu oma ruuter. Mudel on kleebisel (`ruuter.jpg`).
-- **Olukord B, C, D:** MikroTik hAP ax². See on levinud koduruuter ja kooli võrgulaboris on samuti MikroTikid.
+- **Olukord B, C, D:** MikroTik hAP ax². See on levinud koduruuter, mille juhend on veebis vabalt loetav.
 
 **Kuidas juhendi leiad:**
 
