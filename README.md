@@ -54,6 +54,35 @@ Tee ekraanipilt (**Win + Shift + S**) nii, et need kolm rida on näha. Salvesta 
 
 💡 Kui adapteri all on Default Gateway tühi, siis see adapter ei ole võrgus. Otsi järgmine adapter.
 
+### Uuri, mida käsk teeb
+
+Igal Windowsi käsul on sisseehitatud abi. Kirjuta käsu järele `/?`:
+
+```
+ipconfig /?
+```
+
+Abi näitab, mida käsk teeb ja mis võtmed (`/all`, `/release`, `/renew` jne) sellel on. Sama käib iga käsu kohta, näiteks `ping /?`. Nii saad käsu kohta teada ilma Google'ita.
+
+**A. Mida teeb käsk `ipconfig` ja mida lisab võti `/all`? Kirjuta oma sõnadega abi põhjal.**
+
+> ...
+
+**B. Täida tabel oma `ipconfig /all` väljundi järgi.** Kirjuta `...` asemele. Kui ei tea, mis rida tähendab, vaata vihjet tabeli all.
+
+| Rida ipconfig'is | Sinu väärtus | Mis see on ja milleks seda vaja on? | Kiht (2 või 3) |
+|---|---|---|---|
+| Physical Address / Füüsiline aadress | ... | ... | ... |
+| IPv4 Address / IPv4-aadress | ... | ... | ... |
+| Subnet Mask / Alamvõrgumask | ... | ... | ... |
+| Default Gateway / Vaikelüüs | ... | ... | ... |
+
+💡 Vihje: MAC-aadress on võrgukaardi aadress, mille järgi kommutaator saadab kaadri õigesse porti. IP-aadress on arvuti aadress võrgus, mille järgi ruuter pakette suunab. Mask näitab, millised aadressid on sinuga **samas lokaalses võrgus**. Gateway on ruuter, kuhu arvuti saadab kõik, mis läheb **teise võrku**. Loe juurde [Peatükk 4](https://optalvik.github.io/avalused/teooria/04_andmesidekiht.html) ja [Peatükk 6](https://optalvik.github.io/avalused/teooria/06_vorgukiht.html#default-gateway-uks-valismaailma).
+
+**C. Võrdle oma IPv4-aadressi ja Default Gateway't. Mis neil on sama ja miks?**
+
+> ...
+
 ## 2. Sinu ruuter → `ruuter.jpg`
 
 Default gateway on kodus üks konkreetne seade. Tavaliselt on see Telia, Elisa või muu teenusepakkuja karp, mille küljes on kaablid ja tulukesed. Leia see ja pildista **kleebist**. Kleebis on tavaliselt karbi all või taga ja sellel on mudel, MAC-aadress või S/N.
@@ -167,6 +196,7 @@ Sa töötad IT-toes ja klient küsib, millise ruuteri ta peaks ostma. Klient üt
 - [ ] `ipconfig.png`: näha IPv4, MAC ja Default Gateway
 - [ ] `ruuter.jpg`: kleebis, WiFi parool kinni kaetud (või hotspot / kooli WiFi)
 - [ ] `joonis.jpg`: käsitsi joonistatud, IP-aadressid peal
+- [ ] Osa 1 tabel ja küsimused A, C täidetud
 - [ ] Kõik 8 vastust kirjas, `...` ei ole enam alles
 - [ ] Vastuses 4 on link juhendile, vastuses 7 on valitud mudel ja tootelehe read
 
