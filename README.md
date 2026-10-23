@@ -15,7 +15,7 @@ Failid laed üles nii: **Add file → Upload files**, lohista failid, vajuta **C
 
 ## Vali oma olukord (loe kõigepealt!)
 
-Kõigil on sama töö: **3 faili + 3 vastust**. Erineb ainult see, mida pildistad.
+Kõigil on sama töö: **3 faili + 8 vastust**. Erineb ainult see, mida pildistad.
 
 | Sinu olukord | `ipconfig.png` | `ruuter.jpg` | Joonisel on ruuter |
 |---|---|---|---|
@@ -75,7 +75,55 @@ Kirjuta joonisele oma arvuti **IP-aadress** ja ruuteri **IP-aadress** (default g
 
 💡 Vihje: kõik seadmed, mis on ühendatud sama ruuteriga, on üks **lokaalne võrk**. Internet on **teine võrk**. Ruuter on nende kahe vahel.
 
-## 4. Küsimused (vasta oma andmetega, 1–2 lauset)
+## 4. Loe ruuteri juhendit
+
+Iga seadme kohta on tootjal **juhend** (*user manual*) ja **andmeleht** (*datasheet*, *specifications*). Võrguspetsialist ei õpi neid pähe, vaid oskab sealt kiiresti õige rea üles leida. Seda harjutad nüüd.
+
+**Mis seadme juhendit loed?**
+
+- **Olukord A:** sinu oma ruuter. Mudel on kleebisel (`ruuter.jpg`).
+- **Olukord B, C, D:** MikroTik hAP ax². See on levinud koduruuter ja kooli võrgulaboris on samuti MikroTikid.
+
+**Kuidas juhendi leiad:**
+
+1. Otsi Google'ist `<mudel> user manual` või `<mudel> datasheet`, näiteks `MikroTik hAP ax2 user manual`.
+2. Ava **tootja enda leht** (mikrotik.com, tp-link.com, asus.com jne), mitte poe või foorumi leht. Teenusepakkuja karbi juhend on teenusepakkuja abilehel (Telia, Elisa).
+3. Juhend on pikk, seepärast ära loe seda algusest lõpuni. Vajuta **Ctrl+F** ja otsi märksõnu: `192.168`, `default`, `reset`, `password`, `Ethernet`.
+
+💡 MikroTik hAP ax² juhend: <https://help.mikrotik.com/docs/display/UM/hAP+ax%C2%B2>. Seal otsi Ctrl+F-ga sõnu `192.168` ja `reset button`.
+
+## 5. Milline ruuter osta?
+
+Sa töötad IT-toes ja klient küsib, millise ruuteri ta peaks ostma. Klient ütleb, mida ruuter **peab toetama**. Sinu töö on leida tootelehtedelt (*Specifications*) õige mudel ja tõestada valikut tootelehe ridadega.
+
+**Sinu klient sõltub sinu eesnime esitähest:**
+
+| Eesnime esitäht | Klient | Ruuter peab toetama |
+|---|---|---|
+| A–E | **1. Pere kodu** | WiFi 6 (802.11ax) ka **5 GHz** sagedusel; vähemalt 4 juhtmega gigabit-porti; kõige odavam, mis sobib |
+| F–J | **2. Väike kontor** | internet tuleb valguskaabliga, seega on vaja **SFP-porti**; vähemalt 5 gigabit-porti; WiFi-d pole vaja (kontoris on eraldi WiFi-saatjad) |
+| K–M | **3. Kodukontor** | **2,5 Gbit/s** port kiire interneti jaoks; **USB 3** port kõvaketta jaoks; WiFi 6 |
+| N–R | **4. Suvila** | WiFi 6; kasutab ainult telefon ja sülearvuti, seega piisab **2,4 GHz** sagedusest; **kõige odavam** |
+| S–Ü (ka Õ, Ä, Ö) | **5. Maamaja** | **USB-port** 4G modemi jaoks (varuinternet); WiFi ka **5 GHz** sagedusel; kõige odavam, mis sobib |
+
+**Valikus on 5 MikroTiki ruuterit.** Ava iga tooteleht ja vaata osa **Specifications**:
+
+| Mudel | Tooteleht |
+|---|---|
+| hAP ax lite | <https://mikrotik.com/product/hap_ax_lite> |
+| hAP ac² | <https://mikrotik.com/product/hap_ac2> |
+| hAP ax² | <https://mikrotik.com/product/hap_ax2> |
+| hAP ax³ | <https://mikrotik.com/product/hap_ax3> |
+| hEX S | <https://mikrotik.com/product/hex_s> |
+
+💡 Vihjed, mis rida tootelehel otsida:
+
+- juhtmega pordid: `10/100/1000 Ethernet ports`, `Number of 2.5G Ethernet ports`, `SFP ports`
+- WiFi: `Wireless 2.4 GHz standards`, `Wireless 5 GHz standards`. Kui 5 GHz rida puudub, siis 5 GHz sagedust see seade ei toeta. `ax` = WiFi 6, `ac` = WiFi 5
+- USB: `Number of USB ports`, `USB slot type`
+- hind: `Suggested price` (tootja soovitushind dollarites)
+
+## 6. Küsimused (vasta oma andmetega, 1–3 lauset)
 
 **1. Mis on sinu default gateway IP-aadress ja mis seade see sinu kodus on?**
 
@@ -91,6 +139,26 @@ Kirjuta joonisele oma arvuti **IP-aadress** ja ruuteri **IP-aadress** (default g
 
 > ...
 
+**4. Mis ruuteri juhendit sa lugesid (mudel)? Pane link juhendile.**
+
+> ...
+
+**5. Mis aadressil avaneb juhendi järgi ruuteri seadistusleht ja mis on vaikimisi kasutajanimi? Kas see aadress on sama mis sinu default gateway? Kui ei ole, siis miks võib see erineda?**
+
+> ...
+
+**6. Kuidas taastada ruuteri tehaseseaded (reset)? Kirjuta sammud juhendi järgi.**
+
+> ...
+
+**7. Mis number on sinu klient ja millise ruuteri sa valid? Kirjuta iga nõude kohta rida tootelehelt, mis seda tõestab (nt `10/100/1000 Ethernet ports = 5`), ja hind.**
+
+> ...
+
+**8. Vali tabelist üks teine mudel. Millise nõude järgi see sinu kliendile ei sobi? Too tootelehe rida.**
+
+> ...
+
 ---
 
 ## ✅ Kontrolli enne, kui lõpetad
@@ -99,6 +167,7 @@ Kirjuta joonisele oma arvuti **IP-aadress** ja ruuteri **IP-aadress** (default g
 - [ ] `ipconfig.png`: näha IPv4, MAC ja Default Gateway
 - [ ] `ruuter.jpg`: kleebis, WiFi parool kinni kaetud (või hotspot / kooli WiFi)
 - [ ] `joonis.jpg`: käsitsi joonistatud, IP-aadressid peal
-- [ ] Kõik 3 vastust kirjas, `...` ei ole enam alles
+- [ ] Kõik 8 vastust kirjas, `...` ei ole enam alles
+- [ ] Vastuses 4 on link juhendile, vastuses 7 on valitud mudel ja tootelehe read
 
 Järgmise tunni alguses seletad oma joonise järgi, kuidas pakett sinu arvutist internetti läheb. Võta joonis kaasa.
