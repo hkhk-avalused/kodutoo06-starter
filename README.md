@@ -37,15 +37,22 @@ Default gateway leiad igal juhul samamoodi: `ipconfig /all` (osa 1).
 ipconfig /all
 ```
 
-Otsi välja see adapter, millega oled võrgus. WiFi puhul on see **Wireless LAN adapter Wi-Fi**, kaabli puhul **Ethernet adapter Ethernet**. Selle adapteri all on:
+**Enne `ipconfig`-i kirjuta samasse aknasse oma nimi**, et oleks näha, et see on sinu arvuti:
 
-| Inglise keeles | Eesti keeles Windowsis | Mis see on | Kiht |
-|---|---|---|---|
-| Physical Address | Füüsiline aadress | sinu võrgukaardi MAC-aadress, nt `A4-5E-60-12-34-56` | 2 |
-| IPv4 Address | IPv4-aadress | sinu arvuti IP-aadress, nt `192.168.1.23` | 3 |
-| Default Gateway | Vaikelüüs | ruuteri IP-aadress, tavaliselt lõpeb `.1`, nt `192.168.1.1` | 3 |
+```
+echo Mari Maasikas
+ipconfig /all
+```
 
-Tee ekraanipilt (**Win + Shift + S**) nii, et need kolm rida on näha. Salvesta nimega `ipconfig.png`.
+Otsi välja see adapter, millega oled võrgus. WiFi puhul on see **Wireless LAN adapter Wi-Fi**, kaabli puhul **Ethernet adapter Ethernet**. Kui adaptereid on mitu (näiteks VPN või vEthernet), vali see, mille all on **Default Gateway** täidetud.
+
+Selle adapteri all leia neli rida: **Physical Address**, **IPv4 Address**, **Subnet Mask**, **Default Gateway**. Mida need tähendavad, uurid allpool ise.
+
+**Näide, milline ekraanipilt peab olema** (nimi on sinine, otsitavad read kollased):
+
+![Näide: ipconfig /all ekraanipilt koos nimega](naited/ipconfig-naide.png)
+
+Tee ekraanipilt **kogu aknast**: **Win + Shift + S** → vali ülevalt **Window mode** (akna režiim) → klõpsa käsuaknale. Pildil peavad olema näha sinu nimi ja kõik neli rida. Kui aken on liiga väike, tee see enne suuremaks. Ära lõika pilti väiksemaks ja ära pildista ekraani telefoniga. Salvesta nimega `ipconfig.png`.
 
 💡 **Kui sul on Mac või Linux:**
 
@@ -72,12 +79,16 @@ Abi näitab, mida käsk teeb ja mis võtmed (`/all`, `/release`, `/renew` jne) s
 
 | Rida ipconfig'is | Sinu väärtus | Mis see on ja milleks seda vaja on? | Kiht (2 või 3) |
 |---|---|---|---|
-| Physical Address / Füüsiline aadress | ... | ... | ... |
-| IPv4 Address / IPv4-aadress | ... | ... | ... |
-| Subnet Mask / Alamvõrgumask | ... | ... | ... |
-| Default Gateway / Vaikelüüs | ... | ... | ... |
+| Physical Address | ... | ... | ... |
+| IPv4 Address | ... | ... | ... |
+| Subnet Mask | ... | ... | ... |
+| Default Gateway | ... | ... | ... |
 
-💡 Vihje: MAC-aadress on võrgukaardi aadress, mille järgi kommutaator saadab kaadri õigesse porti. IP-aadress on arvuti aadress võrgus, mille järgi ruuter pakette suunab. Mask näitab, millised aadressid on sinuga **samas lokaalses võrgus**. Gateway on ruuter, kuhu arvuti saadab kõik, mis läheb **teise võrku**. Loe juurde [Peatükk 4](https://optalvik.github.io/avalused/teooria/04_andmesidekiht.html) ja [Peatükk 6](https://optalvik.github.io/avalused/teooria/06_vorgukiht.html#default-gateway-uks-valismaailma).
+📖 **Kust vastused leiad:** õpikus, mitte siit.
+
+- Physical Address: [Peatükk 4, „MAC-aadress — seadme isikukood"](https://optalvik.github.io/avalused/teooria/04_andmesidekiht.html#mac-aadress-seadme-isikukood) ja [„MAC vs IP-aadress"](https://optalvik.github.io/avalused/teooria/04_andmesidekiht.html#mac-vs-ip-aadress)
+- IPv4 Address: [Peatükk 4, „MAC vs IP-aadress"](https://optalvik.github.io/avalused/teooria/04_andmesidekiht.html#mac-vs-ip-aadress) ja [Peatükk 6, „Ruuter"](https://optalvik.github.io/avalused/teooria/06_vorgukiht.html#ruuter-vorkude-vaheline-teejuht)
+- Subnet Mask ja Default Gateway: [Peatükk 6, „Default gateway"](https://optalvik.github.io/avalused/teooria/06_vorgukiht.html#default-gateway-uks-valismaailma). Seal on sama väljund näitena.
 
 **C. Võrdle oma IPv4-aadressi ja Default Gateway't. Mis neil on sama ja miks?**
 
@@ -86,6 +97,13 @@ Abi näitab, mida käsk teeb ja mis võtmed (`/all`, `/release`, `/renew` jne) s
 ## 2. Sinu ruuter → `ruuter.jpg`
 
 Default gateway on kodus üks konkreetne seade. Tavaliselt on see Telia, Elisa või muu teenusepakkuja karp, mille küljes on kaablid ja tulukesed. Leia see ja pildista **kleebist**. Kleebis on tavaliselt karbi all või taga ja sellel on mudel, MAC-aadress või S/N.
+
+**Pildil peab olema:**
+
+- kleebis nii, et mudeli nimi on loetav (pildista lähedalt ja valges, ilma välguta, et ei peegelduks)
+- paberitükk, millele oled kirjutanud **oma nime ja tänase kuupäeva**, ruuteri kõrval samal pildil
+
+Kui kleebis ja nimesilt ühele pildile ei mahu, tee kaks pilti: `ruuter.jpg` (kogu karp koos nimesildiga) ja `ruuter2.jpg` (kleebis lähedalt).
 
 ⚠️ **Kata kinni WiFi parool** (näpu või paberiga), kui see on kleebisel. Parool ei tohi pildile jääda.
 
@@ -100,7 +118,13 @@ Joonista **paberile pliiatsiga** (mitte arvutis) oma koduvõrk:
 - internet (pilv)
 - jooned seadmete vahel; WiFi puhul katkendjoon
 
-Kirjuta joonisele oma arvuti **IP-aadress** ja ruuteri **IP-aadress** (default gateway) ülesande 1 pildilt. Pildista joonis ja salvesta `joonis.jpg`.
+Kirjuta joonisele oma arvuti **IP-aadress** ja ruuteri **IP-aadress** (default gateway) ülesande 1 pildilt. Kirjuta lehe ülaserva **oma nimi**.
+
+Pildista **kogu leht** ülevalt, valges ruumis, nii et kõik kirjad on loetavad. Salvesta `joonis.jpg`.
+
+**Näide** (sinu joonis on käsitsi ja sinu aadressidega):
+
+![Näide: koduvõrgu joonis](naited/joonis-naide.png)
 
 💡 Vihje: kõik seadmed, mis on ühendatud sama ruuteriga, on üks **lokaalne võrk**. Internet on **teine võrk**. Ruuter on nende kahe vahel.
 
