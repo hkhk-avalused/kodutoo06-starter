@@ -2,7 +2,7 @@
 
 **Sinu nimi:** _______________________
 
-📖 **Loe enne:** [Peatükk 6: Võrgukiht](https://optalvik.github.io/avalused/teooria/06_vorgukiht.html). Vaja on osasid „Miks kommutaatorist ei piisa", „Ruuter — võrkude vaheline teejuht" ja „Default gateway". Kui jääd millegi juures kinni, vaata [ARP peatükki](https://optalvik.github.io/avalused/teooria/05_arp.html), sest ruuter kasutab ARP-i samamoodi nagu arvuti.
+📖 **Loe enne:** [Peatükk 6: Võrgukiht](https://optalvik.github.io/avalused/teooria/06_vorgukiht.html). Vaja on osasid „Miks kommutaatorist ei piisa", „Ruuter — võrkude vaheline teejuht" ja „Default gateway".
 
 Kõik käib **veebilehel**, käsurida pole vaja. Vajuta selle faili juures **pliiatsit** (✏️ Edit), kirjuta nimi ja vastused `...` asemele, siis vajuta **Commit changes**. Vasta oma sõnadega, 1–3 lausega. Peatüki lõpus on enesekontrolli vastused, aga ava need alles siis, kui oled ise vastanud.
 
