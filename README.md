@@ -13,11 +13,25 @@ Selles kodutöös leiad need asjad **oma kodu võrgust**. Iga õpilase vastused 
 
 Failid laed üles nii: **Add file → Upload files**, lohista failid, vajuta **Commit changes**. README täitmiseks vajuta pliiatsit (✏️ Edit).
 
+## Vali oma olukord (loe kõigepealt!)
+
+Kõigil on sama töö: **3 faili + 3 vastust**. Erineb ainult see, mida pildistad.
+
+| Sinu olukord | `ipconfig.png` | `ruuter.jpg` | Joonisel on ruuter |
+|---|---|---|---|
+| **A. Kodus on ruuter / WiFi-karp** (Telia, Elisa vms) | kodus, oma arvutis | ruuteri kleebis (WiFi parool kinni kaetud) | kodu ruuter |
+| **B. Internet tuleb telefonist** (hotspot, levijagamine) | arvutis, kui on telefoni hotspot'iga ühendatud | ekraanipilt telefoni seadetest, kus levijagamine on sees (Android: Seaded → Ühendused → Mobiilne kuumkoht; iPhone: Settings → Personal Hotspot) | sinu telefon |
+| **C. Ühiselamu WiFi** | ühiselamus, oma arvutis | pilt WiFi-saatjast seinal või laes; kui seda ei näe, ekraanipilt WiFi nimest arvutis | ühiselamu ruuter (kirjuta küsimusse 1, et see on ühiselamu oma) |
+| **D. Kodus pole internetti** | koolis, kooli arvutis või oma sülearvutis kooli võrgus | pilt klassi võrgupesast seinal või kommutaatorist; küsi õpetajalt, kus on kooli ruuter | kooli ruuter (kirjuta küsimusse 1, et see on kooli oma) |
+
+Default gateway leiad igal juhul samamoodi: `ipconfig /all` (osa 1).
+
+
 ---
 
 ## 1. Sinu arvuti aadressid → `ipconfig.png`
 
-Ühenda arvuti kodus WiFi või kaabliga võrku. Ava **Command Prompt** (Start → kirjuta `cmd` → Enter) ja kirjuta:
+Ühenda arvuti WiFi või kaabliga võrku (kodus, ühiselamus või koolis, vt tabelit). Ava **Command Prompt** (Start → kirjuta `cmd` → Enter) ja kirjuta:
 
 ```
 ipconfig /all
@@ -46,11 +60,7 @@ Default gateway on kodus üks konkreetne seade. Tavaliselt on see Telia, Elisa v
 
 ⚠️ **Kata kinni WiFi parool** (näpu või paberiga), kui see on kleebisel. Parool ei tohi pildile jääda.
 
-**Kui kodus ruuterit ei ole**, vali üks nendest:
-
-- **Telefoni levijagamine (hotspot).** Kui arvuti saab interneti telefonist, on ruuter sinu **telefon**. Tee ekraanipilt telefoni seadetest, kus levijagamine on sees (Android: Seaded → Ühendused → Mobiilne kuumkoht; iPhone: Settings → Personal Hotspot). Nimeta fail `ruuter.jpg`.
-- **Ühiselamu või kooli WiFi.** Ruuter ei ole sinu toas. Pildista WiFi-saatjat seinal või laes, kui seda näed, või tee ekraanipilt WiFi nimest arvutis. Kirjuta küsimuse 1 vastusesse, et ruuter on ühiselamu või kooli oma.
-- **Kodus pole üldse internetti.** Tee ülesanne kooli arvutis ja kooli võrgus. Ruuteri asemel pildista klassi kommutaatorit või võrgupesa seinal ja kirjuta, kuhu see kaabel edasi läheb.
+Kui sul on olukord B, C või D, tee pilt nii, nagu on kirjas tabelis „Vali oma olukord" lehe alguses.
 
 ## 3. Joonis käsitsi → `joonis.jpg`
 
