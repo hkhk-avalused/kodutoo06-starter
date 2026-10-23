@@ -33,9 +33,10 @@ Otsi välja see adapter, millega oled võrgus. WiFi puhul on see **Wireless LAN 
 
 Tee ekraanipilt (**Win + Shift + S**) nii, et need kolm rida on näha. Salvesta nimega `ipconfig.png`.
 
-??? tip "Vihje: mul on Mac või Linux"
-    **Mac:** System Settings → Network → Wi-Fi → Details. Seal on IP address, Router (see on default gateway) ja Hardware → MAC address.
-    **Linux:** terminalis `ip a` (MAC on `link/ether` real, IP on `inet` real) ja `ip route` (gateway on `default via` järel).
+💡 **Kui sul on Mac või Linux:**
+
+- **Mac:** System Settings → Network → Wi-Fi → Details. Seal on IP address, Router (see on default gateway) ja Hardware → MAC address.
+- **Linux:** terminalis `ip a` (MAC on `link/ether` real, IP on `inet` real) ja `ip route` (gateway on `default via` järel).
 
 💡 Kui adapteri all on Default Gateway tühi, siis see adapter ei ole võrgus. Otsi järgmine adapter.
 
